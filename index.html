@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kumar Sujal | Software Engineer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed": "#003840",
+                    "surface-dim": "#0e0e0f",
+                    "primary-fixed": "#00e3fd",
+                    "surface-container-high": "#201f21",
+                    "secondary-fixed": "#c1d1ff",
+                    "tertiary": "#ac89ff",
+                    "on-secondary-container": "#cad7ff",
+                    "outline-variant": "#484849",
+                    "surface-bright": "#2c2c2d",
+                    "on-tertiary-container": "#f8f1ff",
+                    "surface-container-highest": "#262627",
+                    "error-container": "#9f0519",
+                    "on-primary": "#005762",
+                    "inverse-primary": "#006976",
+                    "on-surface": "#ffffff",
+                    "on-tertiary-fixed-variant": "#4700a7",
+                    "secondary-container": "#0c47a1",
+                    "on-primary-fixed-variant": "#005762",
+                    "tertiary-container": "#7000ff",
+                    "on-error": "#490006",
+                    "on-secondary-fixed-variant": "#174ca6",
+                    "on-tertiary": "#290067",
+                    "secondary-dim": "#729bfa",
+                    "primary-container": "#00e3fd",
+                    "tertiary-fixed": "#bda1ff",
+                    "tertiary-fixed-dim": "#b190ff",
+                    "primary": "#81ecff",
+                    "secondary-fixed-dim": "#acc3ff",
+                    "on-secondary-fixed": "#003076",
+                    "secondary": "#759efd",
+                    "on-primary-container": "#004d57",
+                    "primary-dim": "#00d4ec",
+                    "inverse-on-surface": "#565556",
+                    "error-dim": "#d7383b",
+                    "on-surface-variant": "#adaaab",
+                    "on-secondary": "#002053",
+                    "surface-tint": "#81ecff",
+                    "surface-container-low": "#131314",
+                    "on-tertiary-fixed": "#1f0052",
+                    "surface-variant": "#262627",
+                    "surface-container-lowest": "#000000",
+                    "error": "#ff716c",
+                    "surface": "#0e0e0f",
+                    "on-background": "#ffffff",
+                    "on-error-container": "#ffa8a3",
+                    "inverse-surface": "#fcf8f9",
+                    "tertiary-dim": "#874cff",
+                    "outline": "#767576",
+                    "primary-fixed-dim": "#00d4ec",
+                    "surface-container": "#1a191b",
+                    "background": "#0e0e0f"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #0e0e0f;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-glow {
+            background: radial-gradient(circle at 50% 50%, rgba(0, 229, 255, 0.15) 0%, transparent 70%);
+        }
+        .glass-panel {
+            background: rgba(38, 38, 39, 0.6);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-surface selection:bg-primary selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#262627]/60 backdrop-blur-xl shadow-[0_0_24px_rgba(0,229,255,0.06)]">
+<div class="flex justify-between items-center px-12 py-6 max-w-[1440px] mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-[#00E5FF] font-['Space_Grotesk']">
+                Kumar Sujal
+            </div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-['Space_Grotesk'] tracking-tight text-lg text-[#81ecff] border-b-2 border-[#81ecff] pb-1 transition-colors duration-300" href="#hero">Hero</a>
+<a class="font-['Space_Grotesk'] tracking-tight text-lg text-[#adaaab] hover:text-[#00E5FF] hover:bg-[#201f21]/50 transition-colors duration-300" href="#skills">Skills</a>
+<a class="font-['Space_Grotesk'] tracking-tight text-lg text-[#adaaab] hover:text-[#00E5FF] hover:bg-[#201f21]/50 transition-colors duration-300" href="#experience">Experience</a>
+<a class="font-['Space_Grotesk'] tracking-tight text-lg text-[#adaaab] hover:text-[#00E5FF] hover:bg-[#201f21]/50 transition-colors duration-300" href="#projects">Projects</a>
+<a class="font-['Space_Grotesk'] tracking-tight text-lg text-[#adaaab] hover:text-[#00E5FF] hover:bg-[#201f21]/50 transition-colors duration-300" href="#education">Education</a>
+</div>
+<a class="bg-gradient-to-r from-primary to-primary-dim text-on-primary-fixed px-6 py-2 rounded-lg font-bold hover:scale-105 active:scale-95 transition-transform" href="mailto:work.kumarsujal@gmail.com">
+                Contact
+            </a>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex flex-col justify-center items-center px-12 hero-glow" id="hero">
+<div class="absolute inset-0 opacity-20 pointer-events-none overflow-hidden">
+<div class="absolute top-1/4 left-1/4 animate-pulse"><span class="material-symbols-outlined text-primary text-6xl">code</span></div>
+<div class="absolute bottom-1/4 right-1/4 animate-bounce duration-[3000ms]"><span class="material-symbols-outlined text-secondary text-5xl">database</span></div>
+<div class="absolute top-1/2 right-1/3"><span class="material-symbols-outlined text-tertiary text-7xl">terminal</span></div>
+</div>
+<div class="z-10 text-center max-w-4xl">
+<h1 class="font-headline text-7xl md:text-9xl font-bold tracking-tighter mb-4 bg-clip-text text-transparent bg-gradient-to-b from-on-surface to-on-surface-variant">
+                    Kumar Sujal
+                </h1>
+<p class="font-headline text-2xl md:text-4xl text-primary font-light tracking-tight mb-8">
+                    Software Engineer | Full-Stack Developer
+                </p>
+<div class="flex flex-wrap justify-center gap-6 mb-12 text-on-surface-variant font-label text-sm uppercase tracking-widest">
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">location_on</span> Bhagalpur, Bihar</span>
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">call</span> +91-8271078712</span>
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">mail</span> work.kumarsujal@gmail.com</span>
+</div>
+<div class="flex gap-4 justify-center">
+<a class="bg-gradient-to-r from-primary to-primary-dim text-on-primary-fixed px-10 py-4 rounded-xl font-bold text-lg hover:shadow-[0_0_24px_rgba(0,229,255,0.3)] transition-all flex items-center gap-2" href="#projects">
+                        View My Work <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+<div class="flex gap-2">
+<a class="p-4 border border-outline-variant/15 rounded-xl hover:bg-surface-container-high transition-colors" href="https://github.com/kumarSujal24" target="_blank">
+<span class="material-symbols-outlined">terminal</span>
+</a>
+<a class="p-4 border border-outline-variant/15 rounded-xl hover:bg-surface-container-high transition-colors" href="https://linkedin.com/in/kumarsujal11" target="_blank">
+<span class="material-symbols-outlined">person_pin</span>
+</a>
+</div>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+<span class="material-symbols-outlined text-on-surface-variant">keyboard_double_arrow_down</span>
+</div>
+</section>
+<!-- Technical Skills -->
+<section class="py-32 px-12 bg-surface-container-low" id="skills">
+<div class="max-w-[1440px] mx-auto">
+<div class="mb-20">
+<h2 class="font-headline text-5xl font-bold text-primary tracking-tighter mb-4">Technical Proficiency</h2>
+<div class="h-1 w-24 bg-primary"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
+<!-- Languages -->
+<div class="space-y-6">
+<h3 class="font-headline text-xl font-semibold text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">translate</span> Languages
+                        </h3>
+<div class="flex flex-wrap gap-3">
+<span class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface text-sm border border-primary/10 hover:border-primary/50 transition-colors flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-primary"></span> Java</span>
+<span class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface text-sm border border-primary/10 hover:border-primary/50 transition-colors flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-primary"></span> JavaScript</span>
+<span class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface text-sm border border-primary/10 hover:border-primary/50 transition-colors flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-primary"></span> HTML/CSS</span>
+<span class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface text-sm border border-primary/10 hover:border-primary/50 transition-colors flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-primary"></span> SQL</span>
+</div>
+</div>
+<!-- Frameworks -->
+<div class="space-y-6">
+<h3 class="font-headline text-xl font-semibold text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">account_tree</span> Frameworks
+                        </h3>
+<div class="flex flex-wrap gap-3">
+<span class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface text-sm border border-primary/10 hover:border-primary/50 transition-colors flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-tertiary"></span> Spring Boot</span>
+<span class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface text-sm border border-primary/10 hover:border-primary/50 transition-colors flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-tertiary"></span> Spring MVC</span>
+<span class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface text-sm border border-primary/10 hover:border-primary/50 transition-colors flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-tertiary"></span> Spring Data JPA</span>
+<span class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface text-sm border border-primary/10 hover:border-primary/50 transition-colors flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-tertiary"></span> Hibernate</span>
+<span class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface text-sm border border-primary/10 hover:border-primary/50 transition-colors flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-tertiary"></span> Thymeleaf</span>
+</div>
+</div>
+<!-- Tools -->
+<div class="space-y-6">
+<h3 class="font-headline text-xl font-semibold text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">handyman</span> Tools
+                        </h3>
+<div class="flex flex-wrap gap-3">
+<span class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface text-sm border border-primary/10 hover:border-primary/50 transition-colors flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary"></span> Git</span>
+<span class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface text-sm border border-primary/10 hover:border-primary/50 transition-colors flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary"></span> VS Code</span>
+<span class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface text-sm border border-primary/10 hover:border-primary/50 transition-colors flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary"></span> Postman</span>
+<span class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface text-sm border border-primary/10 hover:border-primary/50 transition-colors flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary"></span> REST APIs</span>
+</div>
+</div>
+<!-- Deployment -->
+<div class="space-y-6">
+<h3 class="font-headline text-xl font-semibold text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">cloud_upload</span> Deployment
+                        </h3>
+<div class="flex flex-wrap gap-3">
+<span class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface text-sm border border-primary/10 hover:border-primary/50 transition-colors flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-error"></span> Hostinger</span>
+<span class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface text-sm border border-primary/10 hover:border-primary/50 transition-colors flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-error"></span> GitHub Pages</span>
+<span class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface text-sm border border-primary/10 hover:border-primary/50 transition-colors flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-error"></span> SSL/DNS</span>
+</div>
+</div>
+<!-- Core Concepts -->
+<div class="space-y-6 lg:col-span-2">
+<h3 class="font-headline text-xl font-semibold text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">hub</span> Fundamentals
+                        </h3>
+<div class="flex flex-wrap gap-3">
+<span class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface text-sm border border-primary/10 hover:border-primary/50 transition-colors flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-on-surface"></span> OOP</span>
+<span class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface text-sm border border-primary/10 hover:border-primary/50 transition-colors flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-on-surface"></span> DBMS</span>
+<span class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface text-sm border border-primary/10 hover:border-primary/50 transition-colors flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-on-surface"></span> Software Engineering</span>
+<span class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface text-sm border border-primary/10 hover:border-primary/50 transition-colors flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-on-surface"></span> Agile Methodology</span>
+<span class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface text-sm border border-primary/10 hover:border-primary/50 transition-colors flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-on-surface"></span> Manual Testing</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Experience -->
+<section class="py-32 px-12 bg-surface" id="experience">
+<div class="max-w-4xl mx-auto">
+<div class="mb-20 text-center">
+<h2 class="font-headline text-5xl font-bold text-primary tracking-tighter mb-4">Professional Journey</h2>
+<p class="text-on-surface-variant max-w-lg mx-auto">Building robust digital solutions through hands-on industrial expertise.</p>
+</div>
+<div class="relative border-l border-outline-variant/30 ml-4 space-y-24">
+<!-- Experience 1 -->
+<div class="relative pl-12 group">
+<div class="absolute left-[-13px] top-0 w-6 h-6 rounded-full bg-surface-container-highest border-2 border-primary group-hover:scale-125 transition-transform"></div>
+<div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+<h3 class="text-2xl font-bold text-on-surface font-headline">Software Engineer Intern</h3>
+<span class="text-primary font-mono text-sm bg-primary/10 px-3 py-1 rounded-full">Sept 2025 – Feb 2026</span>
+</div>
+<p class="text-secondary font-semibold mb-4">NewbharatSkills</p>
+<p class="text-on-surface-variant leading-relaxed mb-6">
+                            Contributing to large-scale web ecosystems and internal platforms. Instrumental in building and maintaining high-traffic portals like jha360.com, newbharatskills.in, and piyushnjha.com. Focused on responsive design and performance optimization.
+                        </p>
+<div class="flex gap-4">
+<a class="text-xs text-on-surface-variant flex items-center gap-1 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">link</span> jha360.com
+                            </a>
+<a class="text-xs text-on-surface-variant flex items-center gap-1 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">link</span> newbharatskills.in
+                            </a>
+</div>
+</div>
+<!-- Experience 2 -->
+<div class="relative pl-12 group">
+<div class="absolute left-[-13px] top-0 w-6 h-6 rounded-full bg-surface-container-highest border-2 border-secondary group-hover:scale-125 transition-transform"></div>
+<div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+<h3 class="text-2xl font-bold text-on-surface font-headline">Summer Intern</h3>
+<span class="text-secondary font-mono text-sm bg-secondary/10 px-3 py-1 rounded-full">Jun 2024 – Jul 2024</span>
+</div>
+<p class="text-secondary-dim font-semibold mb-4">HSR Hi-Tech Solutions</p>
+<p class="text-on-surface-variant leading-relaxed">
+                            Engineered responsive web features within an Agile development environment. Actively participated in quality assurance testing and peer code reviews, ensuring high standards of software delivery and user experience.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects -->
+<section class="py-32 px-12 bg-surface-container-low" id="projects">
+<div class="max-w-[1440px] mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<div>
+<h2 class="font-headline text-5xl font-bold text-primary tracking-tighter mb-4">Featured Projects</h2>
+<p class="text-on-surface-variant max-w-md">Technical demonstrations of architectural patterns and interactive user experiences.</p>
+</div>
+<a class="text-primary flex items-center gap-2 font-semibold hover:underline" href="https://github.com/kumarSujal24">
+                        Explore all repositories <span class="material-symbols-outlined">north_east</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Project Card 1 -->
+<div class="group bg-surface-container-high p-10 rounded-2xl border border-outline-variant/10 hover:bg-surface-bright transition-all duration-500 overflow-hidden relative">
+<div class="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-[120px]">school</span>
+</div>
+<div class="relative z-10">
+<div class="flex items-center gap-3 mb-6">
+<span class="px-3 py-1 rounded-md bg-primary/20 text-primary text-xs font-bold uppercase tracking-wider">Enterprise</span>
+<span class="px-3 py-1 rounded-md bg-secondary/20 text-secondary text-xs font-bold uppercase tracking-wider">Backend</span>
+</div>
+<h3 class="text-3xl font-headline font-bold text-on-surface mb-4">Student Management System</h3>
+<p class="text-on-surface-variant mb-8 leading-relaxed">
+                                A comprehensive full-stack application designed for institutional data management. Features secure authentication, dynamic records tracking, and automated reporting systems.
+                            </p>
+<div class="flex flex-wrap gap-2 mb-8">
+<span class="px-3 py-1 text-xs rounded bg-surface-variant text-on-surface-variant">Spring Boot</span>
+<span class="px-3 py-1 text-xs rounded bg-surface-variant text-on-surface-variant">MySQL</span>
+<span class="px-3 py-1 text-xs rounded bg-surface-variant text-on-surface-variant">Thymeleaf</span>
+</div>
+<a class="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all" href="#">
+                                View Case Study <span class="material-symbols-outlined">arrow_right_alt</span>
+</a>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="group bg-surface-container-high p-10 rounded-2xl border border-outline-variant/10 hover:bg-surface-bright transition-all duration-500 overflow-hidden relative">
+<div class="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-[120px]">keyboard</span>
+</div>
+<div class="relative z-10">
+<div class="flex items-center gap-3 mb-6">
+<span class="px-3 py-1 rounded-md bg-tertiary/20 text-tertiary text-xs font-bold uppercase tracking-wider">Frontend</span>
+<span class="px-3 py-1 rounded-md bg-primary/20 text-primary text-xs font-bold uppercase tracking-wider">Interactive</span>
+</div>
+<h3 class="text-3xl font-headline font-bold text-on-surface mb-4">Typr - Interactive Typing Platform</h3>
+<p class="text-on-surface-variant mb-8 leading-relaxed">
+                                A modern web utility for measuring typing velocity. Engineered with vanilla JavaScript to ensure real-time error detection and precision analytics without heavy overhead.
+                            </p>
+<div class="flex flex-wrap gap-2 mb-8">
+<span class="px-3 py-1 text-xs rounded bg-surface-variant text-on-surface-variant">HTML5</span>
+<span class="px-3 py-1 text-xs rounded bg-surface-variant text-on-surface-variant">CSS3</span>
+<span class="px-3 py-1 text-xs rounded bg-surface-variant text-on-surface-variant">JavaScript</span>
+</div>
+<a class="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all" href="#">
+                                Launch Project <span class="material-symbols-outlined">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Education & Certifications -->
+<section class="py-32 px-12 bg-surface" id="education">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24">
+<!-- Education -->
+<div>
+<h2 class="font-headline text-5xl font-bold text-primary tracking-tighter mb-12">Academic Foundation</h2>
+<div class="space-y-12">
+<div class="flex gap-6">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">school</span>
+</div>
+<div>
+<h3 class="text-xl font-bold text-on-surface">B.Tech in Computer Science &amp; Engineering</h3>
+<p class="text-secondary mb-2">Haldia Institute of Technology</p>
+<div class="flex items-center gap-4 text-on-surface-variant text-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-xs">stars</span> 8.31 CGPA</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-xs">calendar_month</span> 2021 - 2025</span>
+</div>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">menu_book</span>
+</div>
+<div>
+<h3 class="text-xl font-bold text-on-surface">Higher Secondary Science</h3>
+<p class="text-secondary mb-2">Techno Mission International School</p>
+<div class="flex items-center gap-4 text-on-surface-variant text-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-xs">stars</span> 73.6%</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-xs">calendar_month</span> 2019 - 2021</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Certifications -->
+<div>
+<h2 class="font-headline text-5xl font-bold text-primary tracking-tighter mb-12">Professional Certifications</h2>
+<div class="grid grid-cols-1 gap-4">
+<div class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/10 flex items-center justify-between group hover:border-primary/40 transition-colors">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-tertiary">verified</span>
+<div>
+<h4 class="font-bold text-on-surface">NPTEL: Programming in Java</h4>
+<p class="text-xs text-on-surface-variant">Elite Silver Certification</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary">download</span>
+</div>
+<div class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/10 flex items-center justify-between group hover:border-primary/40 transition-colors">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-tertiary">verified</span>
+<div>
+<h4 class="font-bold text-on-surface">NPTEL: Software Engineering</h4>
+<p class="text-xs text-on-surface-variant">Academic Excellence</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary">download</span>
+</div>
+<div class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/10 flex items-center justify-between group hover:border-primary/40 transition-colors">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-tertiary">verified</span>
+<div>
+<h4 class="font-bold text-on-surface">Coursera: Responsive Web Design</h4>
+<p class="text-xs text-on-surface-variant">Frontend Architecture Specialist</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary">download</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 px-12 relative overflow-hidden">
+<div class="absolute inset-0 bg-primary/5 -skew-y-3 origin-bottom-right"></div>
+<div class="max-w-4xl mx-auto text-center relative z-10">
+<h2 class="font-headline text-5xl md:text-7xl font-bold mb-8">Ready to build something <span class="text-primary italic">extraordinary?</span></h2>
+<p class="text-on-surface-variant text-xl mb-12 max-w-2xl mx-auto">I'm currently looking for new opportunities to leverage my full-stack engineering skills. Let's start a conversation.</p>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="bg-primary text-on-primary-fixed px-12 py-5 rounded-xl font-bold text-xl hover:shadow-[0_0_40px_rgba(0,229,255,0.4)] transition-all" href="mailto:work.kumarsujal@gmail.com">
+                        Hire Me
+                    </a>
+<a class="border border-outline-variant px-12 py-5 rounded-xl font-bold text-xl hover:bg-surface-container-high transition-all" href="#">
+                        Get Resume
+                    </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-12 bg-[#131314] border-t border-[#484849]/15">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 w-full max-w-[1440px] mx-auto">
+<div class="font-['Space_Grotesk'] font-bold text-[#00E5FF] text-xl">
+                Kumar Sujal
+            </div>
+<p class="font-['Inter'] text-sm leading-relaxed text-[#adaaab]">
+                © 2024 Kumar Sujal. Engineered for the web.
+            </p>
+<div class="flex gap-8">
+<a class="text-[#adaaab] hover:text-white transition-colors text-sm" href="https://github.com/kumarSujal24">GitHub</a>
+<a class="text-[#adaaab] hover:text-white transition-colors text-sm" href="https://linkedin.com/in/kumarsujal11">LinkedIn</a>
+<a class="text-[#adaaab] hover:text-white transition-colors text-sm" href="mailto:work.kumarsujal@gmail.com">Email</a>
+<a class="text-[#adaaab] hover:text-white transition-colors text-sm" href="#">Resume</a>
+</div>
+</div>
+</footer>
+</body></html>
